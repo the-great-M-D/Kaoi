@@ -6,7 +6,7 @@ import { ISimplifiedMessage } from '../../typings'
 export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
         super(client, handler, {
-            command: 'kaoi',
+            command: 'M_D',
             description: 'Displays the info',
             category: 'bots',
             usage: `${client.config.prefix}kaoi`,
@@ -16,7 +16,7 @@ export default class Command extends BaseCommand {
 
     run = async (M: ISimplifiedMessage): Promise<void> => {
         return void M.reply(
-            `👾 *kaoi* 👾\n\n🍀 *Description:* Maintained Fork of WhatsApp Botto Void\n\n🌐 *URL:* https://github.com/PrajjwalDatir/Kaoi \n`
+            `🤹  *M_D* 🤹 \n\n🍀 *Description:* Maintained Fork of WhatsApp \n\n🌐 *URL:* https://github.com/the-great-M-D/Kaoi \n`
         ).catch((reason: Error) => M.reply(`an error occurred, Reason: ${reason}`))
     }
 }
